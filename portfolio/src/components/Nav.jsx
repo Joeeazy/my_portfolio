@@ -45,9 +45,11 @@ export default function Nav() {
   );
   return (
     <nav>
-      <div className="10-vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1">
+      <div className="10-vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 flex-1 border-b border-slate-800">
         <div className="flex items-center flex-1">
-          <span className="text-3xl font-bold">MWANGI</span>
+          <span className="text-3xl font-bold dev text-fuchsia-500">
+            MWANGI.
+          </span>
         </div>
         <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">

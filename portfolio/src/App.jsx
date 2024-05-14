@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/About";
+import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Nav from "./components/Nav";
@@ -10,11 +11,12 @@ function App() {
   return (
     <div className="bg-slate-900">
       <Nav />
-      {/* <About />
+      <Banner />
+      <About />
       <Services />
       <Projects />
       <Contact />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
