@@ -20,13 +20,13 @@ export default function Contact() {
       <form action="" className="flex flex-col gap-2 lg:w-1/2">
         <div className="lg:flex gap-9 ">
           <input
-            className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-slate-500"
+            className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-white"
             type="text"
             placeholder="Enter Your Name"
             data-aos="fade-right"
           />
           <input
-            className="w-full rounded-lg lg:my-3 my-4 bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-slate-500"
+            className="w-full rounded-lg lg:my-3 my-4 bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-white"
             type="text"
             placeholder="Enter Your Email"
             data-aos="fade-left"
@@ -37,7 +37,7 @@ export default function Contact() {
           id=""
           cols="30"
           rows="10"
-          className="w-full my-3 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-slate-500"
+          className="w-full my-3 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-white"
           placeholder="Write Your Message..."
           data-aos="fade-right"
         />

@@ -9,6 +9,7 @@ import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import { BallTriangle } from "react-loader-spinner";
+import ParticlesComponent from "./components/ParticlesComponent";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -35,6 +36,7 @@ function App() {
         </div>
       ) : (
         <div className="bg-slate-900">
+          <ParticlesComponent id="particles" />
           <Nav />
           <Banner />
           <About />
