@@ -7,11 +7,9 @@ import { useEffect } from "react";
 export default function Banner() {
   useEffect(() => {
     AOS.init({
-      easing: "ease-out-quart",
-      delay: 0,
       duration: 750,
     });
-  }, [1000]);
+  }, []);
 
   return (
     <div className="lg:px-20 px-6 lg:py-0 py-12 lg:text-start flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16">
