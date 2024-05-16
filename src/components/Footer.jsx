@@ -6,7 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Footer() {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 5000,
     });
   }, []);
   return (

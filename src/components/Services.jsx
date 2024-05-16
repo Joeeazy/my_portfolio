@@ -4,7 +4,7 @@ import { useEffect } from "react";
 export default function Services() {
   useEffect(() => {
     AOS.init({
-      duration: 500,
+      duration: 5000,
     });
   }, []);
   return (
