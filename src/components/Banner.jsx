@@ -8,6 +8,7 @@ export default function Banner() {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
     });
   }, []);
 

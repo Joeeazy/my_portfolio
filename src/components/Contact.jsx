@@ -4,6 +4,7 @@ export default function Contact() {
   useEffect(() => {
     AOS.init({
       delay: 2000,
+      once: true,
     });
   }, []);
   return (

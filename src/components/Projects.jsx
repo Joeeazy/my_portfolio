@@ -4,6 +4,7 @@ export default function Projects() {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
     });
   }, []);
   return (

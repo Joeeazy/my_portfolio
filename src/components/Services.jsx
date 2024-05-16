@@ -5,6 +5,7 @@ export default function Services() {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      once: true,
     });
   }, []);
   return (
