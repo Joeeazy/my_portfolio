@@ -3,7 +3,7 @@ import AOS from "aos";
 export default function Projects() {
   useEffect(() => {
     AOS.init({
-      duration: "2000",
+      duration: "1000",
     });
   }, []);
   return (
@@ -14,10 +14,7 @@ export default function Projects() {
       <h1 className="text-3xl lg:text-5xl font-semibold mb-10 lg:mb-20 leading-normal uppercase text-fuchsia-800">
         Projects
       </h1>
-      <div
-        data-aos="fade-right"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
         {/* cards */}
 
         <div

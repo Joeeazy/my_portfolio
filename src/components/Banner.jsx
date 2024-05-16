@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Banner() {
   useEffect(() => {
     AOS.init({
-      duration: "2000",
+      duration: "1000",
     });
   }, []);
 
