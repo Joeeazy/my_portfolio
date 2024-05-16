@@ -6,15 +6,15 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Footer() {
   useEffect(() => {
     AOS.init({
-      duration: "1000",
+      duration: 1000,
     });
   }, []);
   return (
-    <footer className="bg-slate-800  text-white lg:px-48 px-4 py-20">
-      <div
-        data-aos="fade-left"
-        className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4"
-      >
+    <footer
+      data-aos="fade-left"
+      className="bg-slate-800  text-white lg:px-48 px-4 py-20"
+    >
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
         <div className="mb-4 md:mb-0">
           <span className="text-3xl font-semibold text-fuchsia-800 py-2 uppercase">
             Mwangi
