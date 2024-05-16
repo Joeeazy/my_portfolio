@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       {loading ? (
-        <div className="bg-slate-900 h-[100vh] flex justify-center items-center">
+        <div className="bg-slate-900 max-w-7xl mx-auto pt-20 px-6 h-[100vh] flex justify-center items-center">
           <BallTriangle
             height={100}
             width={100}
@@ -35,7 +35,7 @@ function App() {
           />
         </div>
       ) : (
-        <div className="bg-slate-900">
+        <div className="bg-slate-900 max-w-7xl mx-auto pt-20 px-6">
           <ParticlesComponent id="particles" />
           <Nav />
           <Banner />
