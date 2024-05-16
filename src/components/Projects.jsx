@@ -3,9 +3,7 @@ import AOS from "aos";
 export default function Projects() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      delay: 50,
+      duration: 2000,
     });
   }, []);
   return (

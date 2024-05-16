@@ -7,9 +7,7 @@ import { useEffect } from "react";
 export default function Banner() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      delay: 50,
+      duration: 2000,
     });
   }, []);
 
@@ -18,6 +16,7 @@ export default function Banner() {
       <div className="lg:w-3/4 w-full lg:py-40 flex flex-col justify-center items-center text-white">
         <h1
           data-aos="fade-right"
+          data-aos-easing="ease-out-cubic"
           className="text-4xl font-semibold mb-8 leading-normal"
         >
           Hello, I Am <br />
