@@ -4,7 +4,7 @@ import AOS from "aos";
 export default function Banner() {
   useEffect(() => {
     AOS.init({
-      duration: "2000",
+      duration: "1000",
     });
   }, []);
   return (
