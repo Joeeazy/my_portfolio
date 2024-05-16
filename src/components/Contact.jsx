@@ -3,7 +3,7 @@ import AOS from "aos";
 export default function Contact() {
   useEffect(() => {
     AOS.init({
-      delay: "1500",
+      duration: "2000",
     });
   }, []);
   return (
