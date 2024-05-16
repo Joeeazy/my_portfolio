@@ -12,22 +12,19 @@ export default function Banner() {
   }, []);
 
   return (
-    <div className="lg:px-20 px-6 lg:py-0 py-12 lg:text-start flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16">
+    <div
+      data-aos="fade-right"
+      className="lg:px-20 px-6 lg:py-0 py-12 lg:text-start flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16"
+    >
       <div className="lg:w-3/4 w-full lg:py-40 flex flex-col justify-center items-center text-white">
-        <h1
-          data-aos="fade-right"
-          className="text-4xl font-semibold mb-8 leading-normal"
-        >
+        <h1 className="text-4xl font-semibold mb-8 leading-normal">
           Hello, I Am <br />
           <span className="text-lg">A FullStack developer</span>
         </h1>
-        <p
-          data-aos="fade-left"
-          className="text-fuchsia-800 dev text-4xl font-semibold mb-8 leading-normal"
-        >
+        <p className="text-fuchsia-800 dev text-4xl font-semibold mb-8 leading-normal">
           I Build Things For The Web
         </p>
-        <div data-aos="fade-left" className="flex gap-4">
+        <div className="flex gap-4">
           <a
             href="https://github.com/Joeeazy"
             className="text-fuchsia-800 glow hover:text-fuchsia-800 rounded-full p-3 bg-purple-100 hover:bg-purple-200 transition duration-300 ease-in-out"
@@ -62,7 +59,6 @@ export default function Banner() {
           className="rounded-md border-2 p-1 border-purple-500 img_glow"
           alt="profile image"
           style={{ maxWidth: "100%", height: "auto" }}
-          data-aos="fade-up"
         />
       </div>
     </div>

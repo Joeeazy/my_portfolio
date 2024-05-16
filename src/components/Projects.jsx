@@ -10,6 +10,7 @@ export default function Projects() {
   return (
     <div
       id="Projects"
+      data-aos="fade-right"
       className="p-5 lg:p-20 flex flex-col items-center justify-center"
     >
       <h1 className="text-3xl lg:text-5xl font-semibold mb-10 lg:mb-20 leading-normal uppercase text-fuchsia-800">
@@ -18,10 +19,7 @@ export default function Projects() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10">
         {/* cards */}
 
-        <div
-          data-aos="fade-up"
-          className="card text-lg lg:text-xl rounded-lg border border-fuchsia-800 shadow-xl b_glow mb-5"
-        >
+        <div className="card text-lg lg:text-xl rounded-lg border border-fuchsia-800 shadow-xl b_glow mb-5">
           <figure>
             <img
               src="/images/projects/project1.png"
@@ -46,10 +44,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div
-          data-aos="fade-down"
-          className="card text-lg lg:text-xl rounded-lg border border-fuchsia-800 shadow-xl b_glow mb-5"
-        >
+        <div className="card text-lg lg:text-xl rounded-lg border border-fuchsia-800 shadow-xl b_glow mb-5">
           <figure>
             <img
               src="/images/projects/project2.png"
@@ -72,10 +67,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div
-          data-aos="fade-up"
-          className="card text-lg lg:text-xl rounded-md border border-fuchsia-800 shadow-xl b_glow mb-5"
-        >
+        <div className="card text-lg lg:text-xl rounded-md border border-fuchsia-800 shadow-xl b_glow mb-5">
           <figure>
             <img
               src="/images/projects/project3.png"
@@ -100,10 +92,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div
-          data-aos="fade-down"
-          className="card text-lg lg:text-xl rounded-md border border-fuchsia-800 shadow-xl b_glow mb-5"
-        >
+        <div className="card text-lg lg:text-xl rounded-md border border-fuchsia-800 shadow-xl b_glow mb-5">
           <figure>
             <img
               src="/images/projects/project4.png"
