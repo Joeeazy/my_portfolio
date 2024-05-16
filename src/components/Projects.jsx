@@ -3,8 +3,7 @@ import AOS from "aos";
 export default function Projects() {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
-      once: true,
+      duration: "2000",
     });
   }, []);
   return (
