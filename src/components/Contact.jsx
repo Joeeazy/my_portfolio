@@ -3,14 +3,13 @@ import AOS from "aos";
 export default function Contact() {
   useEffect(() => {
     AOS.init({
-      delay: "1000",
+      delay: "1500",
     });
   }, []);
   return (
     <div
       id="Contact"
       className="p-4 lg:p-20 flex flex-col items-center justify-center "
-      data-aos="zoom-out-up"
     >
       <h1
         data-aos="fade-left"

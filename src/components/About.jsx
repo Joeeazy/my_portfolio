@@ -4,7 +4,7 @@ import AOS from "aos";
 export default function Banner() {
   useEffect(() => {
     AOS.init({
-      duration: "1000",
+      duration: "1500",
     });
   }, []);
   return (
@@ -15,7 +15,6 @@ export default function Banner() {
       <div className="lg:w-2/3 w-full mt-10" data-aos="down">
         <img
           data-aos="fade-down"
-          data-aos-easing="ease-out-cubic"
           src="/images/profile2.jpeg"
           width={290}
           height={290}
