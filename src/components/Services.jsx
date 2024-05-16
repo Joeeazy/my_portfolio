@@ -4,7 +4,9 @@ import { useEffect } from "react";
 export default function Services() {
   useEffect(() => {
     AOS.init({
-      duration: 5000,
+      duration: 1000,
+      easing: "ease-in-out",
+      delay: 50,
     });
   }, []);
   return (
