@@ -28,7 +28,7 @@ export default function Footer() {
             always eager to learn and implement new technologies.
           </p>
         </div>
-        <div className="ml-8">
+        <div className="lg:ml-8">
           <h2 className="text-[22px] font-semibold text-fuchsia-800 py-2 uppercase">
             Services
           </h2>
