@@ -1,16 +1,16 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
 
 export default function Services() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
   return (
     <div
-      data-aos="fade-left"
+      // data-aos="fade-left"
       id="Services"
       className="p-5 lg:p-20 flex flex-col items-center justify-center"
     >

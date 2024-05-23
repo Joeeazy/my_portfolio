@@ -1,37 +1,38 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Footer() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  //   useEffect(() => {
+  //     AOS.init({
+  //       duration: 1000,
+  //     });
+  //   }, []);
   return (
     <footer
-      data-aos="fade-left"
+      // data-aos="fade-left"
       className="bg-slate-800  text-white lg:px-48 px-4 py-20"
     >
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="mb-4 md:mb-0">
           <span className="text-3xl font-semibold text-fuchsia-800 py-2 uppercase">
             Mwangi
           </span>
           <p className="text-[16px] my-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit ad
-            maxime beatae hic soluta facilis vel nulla fugiat veniam ipsam? Non
-            doloremque alias necessitatibus, ipsam nesciunt dolores! Officiis,
-            aliquid dolores!
+            A passionate Full Stack Developer specializing in the MERN stack and
+            Python Flask. With a robust foundation in both front-end and
+            back-end development, I am dedicated to building scalable and
+            efficient web applications. I thrive in dynamic environments and am
+            always eager to learn and implement new technologies.
           </p>
         </div>
-        <div>
+        <div className="ml-8">
           <h2 className="text-[22px] font-semibold text-fuchsia-800 py-2 uppercase">
             Services
           </h2>
-          <ul className="text-[16px] my-4 ">
+          <ul className="text-[16px] my-4">
             <li className="my-2">Web Design</li>
             <li className="my-2">Web Development</li>
             <li className="my-2">SEO</li>

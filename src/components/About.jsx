@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import React, { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 
 export default function Banner() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
   return (
     <div
-      data-aos="fade-down"
       id="About"
       className="lg:px-10 lg:w-4/3 px-4 lg:py-0 py-12 lg:text-wrap flex flex-col-reverse lg:flex-row items-center gap-5 lg:gap-3"
     >

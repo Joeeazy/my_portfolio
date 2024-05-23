@@ -1,16 +1,16 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 export default function Projects() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  //   useEffect(() => {
+  //     AOS.init({
+  //       duration: 1000,
+  //     });
+  //   }, []);
   return (
     <div
       id="Projects"
-      data-aos="fade-right"
+      // data-aos="fade-right"
       className="p-5 lg:p-20 flex flex-col items-center justify-center"
     >
       <h1 className="text-3xl lg:text-5xl font-semibold mb-10 lg:mb-20 leading-normal uppercase text-fuchsia-800">

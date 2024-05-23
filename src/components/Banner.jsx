@@ -1,19 +1,19 @@
 import { FaGithub, FaLinkedin, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function Banner() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
 
   return (
     <div
-      data-aos="fade-right"
+      // data-aos="fade-right"
       className="lg:px-20 px-6 lg:py-0 py-12 lg:text-start flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-16"
     >
       <div className="lg:w-3/4 w-full lg:py-40 flex flex-col justify-center items-center text-white">
