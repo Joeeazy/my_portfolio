@@ -38,7 +38,6 @@ export default function Contact() {
   return (
     <div
       id="Contact"
-      data-aos="fade-left"
       className="p-4 lg:p-20 flex flex-col items-center justify-center "
     >
       <h1 className="text-3xl lg:text-5xl font-semibold mb-10 lg:mb-20 leading-normal uppercase text-fuchsia-800">
@@ -56,7 +55,6 @@ export default function Contact() {
             name="user_name"
             type="text"
             placeholder="Enter Your Name"
-            data-aos="fade-right"
             required="true"
           />
           <input

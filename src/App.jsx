@@ -10,9 +10,23 @@ import Projects from "./components/Projects";
 import Services from "./components/Services";
 import { BallTriangle } from "react-loader-spinner";
 import ParticlesComponent from "./components/ParticlesComponent";
-
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 function App() {
   const [loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 2000,
+  //   });
+  //   AOS.refresh();
+  // return () => {
+  //   //Kill your animation not sure of the syntax for AOS.
+  //   //AOS.kill()
+  //   //Or
+  //   AOS.refresh();
+  // };
+  // }, []);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
