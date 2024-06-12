@@ -1,7 +1,28 @@
 // import React, { useEffect } from "react";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_6eps88n", "template_ak7f9se", form.current, {
+        publicKey: "4R0dHX4IVyDng8d0r",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   //   useEffect(() => {
   //     AOS.init({
   //       duration: 1000,
@@ -16,22 +37,29 @@ export default function Contact() {
       <h1 className="text-3xl lg:text-5xl font-semibold mb-10 lg:mb-20 leading-normal uppercase text-fuchsia-800">
         Contact Me
       </h1>
-      <form action="" className="flex flex-col gap-2 lg:w-1/2">
+      <form
+        action=""
+        className="flex flex-col gap-2 lg:w-1/2"
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <div className="lg:flex gap-9 ">
           <input
             className="w-full lg:my-3 my-4 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-white"
+            name="user_name"
             type="text"
             placeholder="Enter Your Name"
             data-aos="fade-right"
           />
           <input
             className="w-full rounded-lg lg:my-3 my-4 bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-white"
-            type="text"
+            type="email"
+            name="user_email"
             placeholder="Enter Your Email"
           />
         </div>
         <textarea
-          name=""
+          name="message"
           id=""
           cols="30"
           rows="10"
@@ -41,6 +69,7 @@ export default function Contact() {
         <button
           className="neno-button shadow-xl hover:shadow-fuchsia-800/50 text-white border-2 border-fuchsia-800 bg-fuchsia-800 hover:bg-slate-900 rounded-lg py-4 px-8 uppercase relative overflow-hidden b_glow text-xl text-bold mb-10 my-6"
           type="submit"
+          value="send"
         >
           Submit
         </button>

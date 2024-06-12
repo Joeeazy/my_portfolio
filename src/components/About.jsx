@@ -1,13 +1,4 @@
-// import React, { useEffect } from "react";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
-
 export default function Banner() {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //   });
-  // }, []);
   return (
     <div
       id="About"
@@ -41,9 +32,14 @@ export default function Banner() {
           expectations.
         </p>
         <div className="flex mt-8 gap-4">
-          <button className="neno-button shadow-xl hover:shadow-purple-800/50 glow text-white border-2 hover:bg-purple-800 border-purple-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden transition duration-300 ease-in-out">
-            Resume
-          </button>
+          <a
+            href="/Mwangi Joseph Full Stack Software Developer Resume.pdf"
+            download="Mwangi Joseph Full Stack Software Developer Resume"
+          >
+            <button className="neno-button shadow-xl hover:shadow-purple-800/50 glow text-white border-2 hover:bg-purple-800 border-purple-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden transition duration-300 ease-in-out">
+              Resume
+            </button>
+          </a>
         </div>
       </div>
     </div>
