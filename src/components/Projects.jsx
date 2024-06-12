@@ -35,7 +35,7 @@ export default function Projects() {
               A Fullstack Chat app with Real Time Messaging Built using Mern
             </p>
             <div className="card-actions flex justify-center">
-              <button className="neno-button shadow-xl mb-6  glow c border-2 text-gray-200 rounded-lg py-2 px-5 uppercase relative overflow-hidden transition duration-300 ease-in-out">
+              <button className="neno-button shadow-xl hover:shadow-purple-800/50 glow text-white border-2 hover:bg-purple-800 border-purple-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden transition duration-300 ease-in-out">
                 <a href="https://chat-app-production-j5xl.onrender.com/">
                   Live Demo
                 </a>
@@ -60,7 +60,7 @@ export default function Projects() {
               A Fullstack Real Estates WebApp built using MERN stack
             </p>
             <div className="card-actions flex justify-center">
-              <button className="neno-button shadow-xl mb-6 glow text-gray-200 border-2 rounded-lg py-2 px-5 uppercase relative overflow-hidden transition duration-300 ease-in-out">
+              <button className="neno-button shadow-xl hover:shadow-purple-800/50 glow text-white border-2 hover:bg-purple-800 border-purple-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden transition duration-300 ease-in-out">
                 <a href="https://real-estates-c0vr.onrender.com/">Live Demo</a>
               </button>
             </div>
@@ -83,7 +83,7 @@ export default function Projects() {
               A Landing Page for a Virtual Reality company built using react.js
             </p>
             <div className="card-actions flex justify-center">
-              <button className="neno-button shadow-xl mb-6  glow text-gray-200 border-2 rounded-lg py-2 px-5 uppercase relative overflow-hidden transition duration-300 ease-in-out">
+              <button className="neno-button shadow-xl hover:shadow-purple-800/50 glow text-white border-2 hover:bg-purple-800 border-purple-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden transition duration-300 ease-in-out">
                 <a href="https://devvirtualr-git-main-joeeazys-projects.vercel.app/">
                   Live Demo
                 </a>
@@ -108,7 +108,7 @@ export default function Projects() {
               Frontend UI/UX for an Ecomerce web App with filter functionalities
             </p>
             <div className="card-actions flex justify-center">
-              <button className="neno-button shadow-xl mb-6 glow text-gray-200 border-2 rounded-lg py-2 px-5 uppercase relative overflow-hidden transition duration-300 ease-in-out">
+              <button className="neno-button shadow-xl hover:shadow-purple-800/50 glow text-white border-2 hover:bg-purple-800 border-purple-800 rounded-lg py-4 px-8 uppercase relative overflow-hidden transition duration-300 ease-in-out">
                 <a href="https://coral-tau.vercel.app/">Live Demo</a>
               </button>
             </div>

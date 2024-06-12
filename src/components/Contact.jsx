@@ -1,12 +1,14 @@
 // import React, { useEffect } from "react";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const form = useRef();
-
+  const [emailSent, setEmailSent] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -16,7 +18,12 @@ export default function Contact() {
       })
       .then(
         () => {
+          setEmailSent(true); // Set emailSent state to true
           console.log("SUCCESS!");
+          setTimeout(() => {
+            setEmailSent(false);
+          }, 3000);
+          form.current.reset();
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -50,11 +57,13 @@ export default function Contact() {
             type="text"
             placeholder="Enter Your Name"
             data-aos="fade-right"
+            required="true"
           />
           <input
             className="w-full rounded-lg lg:my-3 my-4 bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-white"
             type="email"
             name="user_email"
+            required="true"
             placeholder="Enter Your Email"
           />
         </div>
@@ -63,6 +72,7 @@ export default function Contact() {
           id=""
           cols="30"
           rows="10"
+          required="true"
           className="w-full my-3 rounded-lg bg-slate-800 p-4 border-2 border-fuchsia-800 b_glow text-xl text-white"
           placeholder="Write Your Message..."
         />
@@ -71,9 +81,17 @@ export default function Contact() {
           type="submit"
           value="send"
         >
-          Submit
+          Send Message
         </button>
       </form>
+      {/* Conditional rendering of toast */}
+      {emailSent && (
+        <div className="toast toast-top toast-end">
+          <div className="alert alert-success bg-fuchsia-900 text-white glow">
+            <span>Message sent successfully.</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -19,17 +19,16 @@ export default function Banner() {
           ABOUT ME. <br />
         </h1>
         <h1 className="text-4xl leading-snug text-white mb-2">
-          My Name Is Mwangi Joseph
+          👋 Hey there, My Name Is Mwangi Joseph
         </h1>
-        <p className="text-lg text-gray-400 mb-6 text-center">
-          I am a skilled full-stack engineer who demonstrates technical skills,
-          flexibility, and an innovative spirit. I easily handle challenges to
-          produce scalable, high-quality solutions. My ability to switch between
-          frameworks and technologies with ease, together with my strong
-          cooperation and communication skills, guarantees seamless delivery of
-          projects. I'm dedicated to lifelong learning, staying on the cutting
-          edge of technology, and providing solutions that go above and beyond
-          expectations.
+        <p className="text-lg text-gray-300 mb-6 text-center">
+          I'm a freelance Full Stack Web Developer. Here's my story: My journey
+          began in the world of public health, where I envisioned a career
+          shaping community well-being. However, life had a twist waiting for
+          me. As I sat in my lectures, my mind wandered on What my peers were
+          learning in other fields. Software engineering caught my eye. Without
+          a roadmap, I dove into HTML, CSS, and JavaScript. I later joined ALX
+          AFRICA, where I've grown to become a full-stack software developer.
         </p>
         <div className="flex mt-8 gap-4">
           <a
